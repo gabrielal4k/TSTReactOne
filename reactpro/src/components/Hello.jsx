@@ -1,8 +1,12 @@
-function Hello() {
+
+
+function Hello({ name, message }) {
+
   return (
     <div>
-      <h1>Hello, World!</h1>
-      <p>This is a simple React component.</p>
+      <h1>
+        {message}, {name}!
+      </h1>
     </div>
   );
 }
