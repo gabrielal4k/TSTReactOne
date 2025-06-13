@@ -1,11 +1,11 @@
 
 
-function Hello({ name, message }) {
+function Hello({person}) {
 
   return (
     <div>
       <h1>
-        {message}, {name}!
+        {person.name} says {person.message}! {person.seatNumber}
       </h1>
     </div>
   );
