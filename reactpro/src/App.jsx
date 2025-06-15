@@ -1,6 +1,7 @@
 
 import Fruits from './components/Fruits.jsx';
 import Hello from './components/Hello.jsx'
+import ConditionalComponent from './components/ConditionalComponent.jsx';
 
 function App() {
 

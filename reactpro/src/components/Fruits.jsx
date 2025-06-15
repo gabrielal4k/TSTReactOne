@@ -8,27 +8,32 @@ export default function Fruits(){
         {
             name:"Apple",
             price:10,
-            emooji:"🍎"
+            emooji:"🍎",
+            soldout:false
         },
         {
             name:"Banana",
             price:5,
-            emooji:"🍌"
+            emooji:"🍌",
+            soldout:true
         },
         {
             name:"Cherry",
             price:15,
-            emooji:"🍒"
+            emooji:"🍒",
+            soldout:false
         },
         {
             name:"Date",
             price:20,
-            emooji:"🌴"
+            emooji:"🌴",
+            soldout:true
         },
         {
             name:"Elderberry",
             price:25,
-            emooji:"🍇"
+            emooji:"🍇",
+            soldout:false
         }
     ];
 
@@ -42,6 +47,7 @@ export default function Fruits(){
                     name={fruit.name} 
                     price={fruit.price} 
                     emooji={fruit.emooji}
+                    soldout={fruit.soldout}
                 />
 
                 ))}
