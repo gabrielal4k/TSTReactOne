@@ -5,16 +5,11 @@ export default function Form(){
 
     const [name, setName] = useState({firstName: "", lastName: ""});
 
-    // const [email, setEmail] = useState("");
-    // function handleChange(event) {
-    //     // console.log(event.target.value);
-    //     setName(event.target.value);
-    // }
 
-    // function handleChange2(event) {
-    //     // console.log(event.target.value);
-    //     setEmail(event.target.value);
-    // }
+    function handleSubmit(e){
+        e.preventDefault();
+        console.log(name);
+    }
 
     return (
         <div>
@@ -31,8 +26,10 @@ export default function Form(){
                 type="text" 
                 value={name.lastName} />
                 
-
+                <h1>{name.firstName} {name.lastName}</h1>
                 {/* <input onChange={ handleChange2} type="text" value={email} /> */}
+
+                <button onClick={(e) => handleSubmit(e)} >Add</button>
             </form>
         </div>
     );
